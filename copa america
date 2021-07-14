@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+.header-section{
+    padding: 12px 0;
+    background-color: #2d25a0;
+
+}
+/* Header-menu*/
+ul{
+    background-color: #2d25a0;
+    padding-left: 0;
+}
+ul li{
+    display: inline-block;
+    padding-right: 17px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    font-size: 19px;
+    text-shadow: 1px 1px 30px black;
+}
+ul li:hover a{
+    color: rgb(167, 164, 164);
+}
+/* header-button */
+.header-btn{
+    background-color: #e02c6d;
+    color: rgb(255, 255, 255);
+    padding: 4px 24px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+.header-btn img{
+    width: 29px;
+}
+.hdr-btn{
+    text-align: right;
+}
+
+/* banner*/
+.banner-section{
+    background-color: #2d25a0;
+    padding: 75px 0;
+}
+/* banner-header*/
+.banner-header {
+    color: whitesmoke;
+    padding-top: 52px;
+    font-size: 88px;
+    text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.344);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.banner-btn{
+    background-color: #e02c6d;
+    color: rgb(255, 255, 255);
+    padding: 11px 31px;
+    margin-top: 12px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+.banner-btn:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+.banner-btn img{
+    width: 29px;    
+    color: whitesmoke;
+}
+
+/* banner-image*/
+.banner-image{
+    width: 587px;
+}
+
+/* blocksection */
+.block-section{
+    background-color: #ffffff;
+}
+.blog-content{
+    width: 1080px;
+    margin: 0 auto;
+}
+.card{
+    margin-top: 24px;
+
+    padding: 13px;
+    border: none;
+    box-shadow: 1px 1px 44px rgba(106, 102, 102, 0.296)
+}
+.caption{
+    margin-top: 12px;
+}
+.caption h2{
+    font-weight: 700;
+}
+.caption p{
+    line-height: 24px;
+    font-size: 19px;
+    padding: 8px 0;
+    color: rgb(124, 123, 123);
+}
+
+/* news-area*/
+.news-section{
+    margin-top: 121px;
+}
+.news-header{
+    font-size: 53px;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+.news-p{
+    margin-top: 0;
+    word-spacing: 2px;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    color: rgb(95, 94, 94);
+}
+.news-area{
+    margin: auto 0;
+}
+.blog-image img{
+    transition: .3s;
+}
+.blog-image:hover img{
+    transition: .3s;
+    transform: scale(1.1);
+}
+/* news are*/
+.footer-section{
+    margin-top: 100px !important;
+   text-align: center;
+}
+.footer-image{
+    width: 480px;
+    margin: 0 auto;
+}
+.social img{
+    width: 43px;
+    margin: 12px 6px;
+}
+.copyright p{
+    padding: 12px 0;
+    color: black;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .container{
+        width: 768px !important;
+    }
+    ul{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .banner-section{
+        background-color: #2d25a0;
+        padding: 23px 0;
+    }
+    .banner-header {
+        padding-top: 0 !important;
+        font-size: 60px !important;
+        padding-left: 23px !important;
+    }
+    .banner-btn{
+        padding: 11px 31px;
+        margin-left: 23px !important;
+     
+    }
+    .banner-image{
+    margin: 32px auto !important;
+    margin-top: 66px !important;
+
+    }
+    .blog-content{
+        width: 768px !important;
+        margin: 0 auto;
+    }
+    .card{
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+
+    }
+    .banner-btn{
+        margin-bottom: 23px !important;
+    }
+    .news-section{
+        text-align: center;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+  <div class="header-section">
+      <div class="container">
+       <div class="row pt-4">
+           <div class="col-lg-10">
+            <ul class=" header-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Clubs</a></li>
+                <li><a href="#">World Cup 2023</a></li>
+                <li><a href="#">Upcoming Matches</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           </div>
+           <div class="col-lg-2 hdr-btn">
+        <button class="btn header-btn"> <img src="./img/Social Icons/login.png" alt=""> Login</button>
+
+           </div>
+       
+       </div>
+      </div>
+  </div>
+
+  <div class="banner-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <h1 class="banner-header">Conmebol Copa America 2021</h1>
+                  <div class="btn banner-btn">Watch Live <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="banner-image">
+                      <img src="./img/banner/banner.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="block-section mt-5">
+      <div class="blog-content">
+          <div class="row">
+              <div class="col-lg-4">
+                  <div class="card">
+                      <div class="image">
+                          <img src="./img/player/player-1.png" alt="">
+                      </div>
+                      <div class="caption">
+                          <h2>Neymar Jr</h2>
+                          <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Lacus,
+                            fermentum amet faucibus sed id nisi
+                            lectus at.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                    <div class="image">
+                        <img src="./img/player/player-2.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <h2>Lionel Messi</h2>
+                        <p>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Lacus,
+                          fermentum amet faucibus sed id nisi
+                          lectus at.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                    <div class="image">
+                        <img src="./img/player/player-3.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <h2>Cristiano Ronaldo</h2>
+                        <p>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Lacus,
+                          fermentum amet faucibus sed id nisi
+                          lectus at.</p>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="image">
+                        <img src="./img/player/player-4.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <h2>Paulo Dybala</h2>
+                        <p>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Lacus,
+                          fermentum amet faucibus sed id nisi
+                          lectus at.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                  <div class="image">
+                      <img src="./img/player/player-5.png" alt="">
+                  </div>
+                  <div class="caption">
+                      <h2>Mesut Ozil </h2>
+                      <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Lacus,
+                        fermentum amet faucibus sed id nisi
+                        lectus at.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                  <div class="image">
+                      <img src="./img/player/player-6.png" alt="">
+                  </div>
+                  <div class="caption">
+                      <h2>Mauro Icardi </h2>
+                      <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Lacus,
+                        fermentum amet faucibus sed id nisi
+                        lectus at.</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="image">
+                        <img src="./img/player/player-7.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <h2>Di Maria</h2>
+                        <p>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Lacus,
+                          fermentum amet faucibus sed id nisi
+                          lectus at.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                  <div class="image">
+                      <img src="./img/player/player-8.png" alt="">
+                  </div>
+                  <div class="caption">
+                      <h2>Kylian Mbappé</h2>
+                      <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Lacus,
+                        fermentum amet faucibus sed id nisi
+                        lectus at.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                  <div class="image">
+                      <img src="./img/player/player-9.png" alt="">
+                  </div>
+                  <div class="caption">
+                      <h2>Mohamed Salah</h2>
+                      <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Lacus,
+                        fermentum amet faucibus sed id nisi
+                        lectus at.</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="image">
+                        <img src="./img/player/player-10.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <h2>Harry Kane</h2>
+                        <p>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Lacus,
+                          fermentum amet faucibus sed id nisi
+                          lectus at.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                  <div class="image">
+                      <img src="./img/player/player-11.png" alt="">
+                  </div>
+                  <div class="caption">
+                      <h2>Kevin De Bruyne</h2>
+                      <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Lacus,
+                        fermentum amet faucibus sed id nisi
+                        lectus at.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                  <div class="image">
+                      <img src="./img/player/player-12.png" alt="">
+                  </div>
+                  <div class="caption">
+                      <h2>Philippe Coutinho</h2>
+                      <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Lacus,
+                        fermentum amet faucibus sed id nisi
+                        lectus at.</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="news-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 news-area">
+                  <h2 class="news-header">Lionel Messi: What records does he hold?</h2>
+                  <p class="news-p">We all know he is a great player, but just how great? UEFA.com runs through his unique achievements. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem earum est, ex maxime quibusdam molestias expedita ipsum consequuntur fugiat voluptatum.</p>
+                  <div class="btn banner-btn">Watch Now <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="blog-image">
+                      <img src="./img/Messi/brazil_v_argentina_final_-_copa_america_brazil_2021.webp" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="news-section pt-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 news-area">
+                <h2 class="news-header">Copa America 2021 final: It’s Messi v Neymar, Argentina v Brazil</h2>
+                <p class="news-p">Europe might be waiting for England versus Italy in Sunday’s Euro 2020 showpiece but there is an even bigger match to look forward to in South America as an older rivalry between two more successful teams kicks off in Saturday’s Copa America final.
+
+                    Brazil against Argentina is a true clasico.</p>
+                <div class="btn banner-btn cs-btn">Watch Now <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="blog-image">
+                    <img src="./img/2021-07-08T170921Z_1945472836_RC2HGO997CF3_RTRMADP_3_SOCCER-COPA-BRA-ARG-MESSI.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="footer-section mt-5 pt-3">
+      <div class="container">   
+          <div class="footer-image">    
+              <img src="./img/Logo.png" alt="">
+          </div>
+          <div class="social">
+              <img src="./img/Social Icons/Instagram.png" alt="">
+              <img src="./img/Social Icons/Dribbble.png" alt="">
+              <img src="./img/Social Icons/Twitter.png" alt="">
+              <img src="./img/Social Icons/Youtube.png" alt="">
+          </div>
+          <div class="copyright">
+              <p>Copyright © 2022 Football</p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
